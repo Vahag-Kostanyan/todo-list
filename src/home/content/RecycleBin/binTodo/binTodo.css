@@ -1,0 +1,76 @@
+.BinTodo-content{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.BinTodo-content-left-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 ;
+}
+.BinTodo-content-left-side input{
+    width: 17px;
+    height: 17px;
+}
+.BinTodo-content-left-side p{
+    font-size: 18px;
+}
+.BinTodo-content-right-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 ;
+}
+.BinTodo-content-right-side button{
+    display: flex;
+    font-size: 14px;
+    padding: 3px ;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #d3d8dd;
+}
+.BinTodo-content-right-side button:hover{
+    background-color: #d0efff;
+}
+.BinTodo-content-right-side :nth-child(2){
+    display: flex;
+    font-size: 19px;
+    padding: 1px ;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .BinTodo-content{
+        width: 98%;
+    }
+}
+@media (max-width: 450px){
+    .BinTodo-content-left-side input{
+        width: 19px;
+        height: 19px;
+    }
+    .BinTodo-content-left-side p{
+        font-size: 20px;
+    }
+    .BinTodo-content-right-side button{
+        font-size: 20px;
+    }
+    .BinTodo-content-right-side button:hover{
+        background-color: #ffffff;
+    }
+    .BinTodo-content-right-side :nth-child(2){
+        font-size: 22px;
+    }
+    .BinTodo-content-left-side input{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 300px){
+    .BinTodo-content-left-side p{
+        font-size: 18px;
+    }
+}

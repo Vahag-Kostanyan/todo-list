@@ -1,0 +1,213 @@
+.todo-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    font-size: 19px;
+}
+.todo-content{
+    display: flex;
+    align-items: center;
+    border: 2px solid #bebcbc;
+    width: 100%;
+    justify-content: space-between;
+}
+.todo-content-left-side{
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.todo-content-left-side input[type="checkbox"]{
+    padding: 15px ;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.todo-content-left-side form{
+    display: flex;
+    gap: 10px;
+}
+.updateInput{
+    width: 150px;
+    border: 1px solid #bebcbc;
+    padding: 2px 4px;
+    outline: none;
+}
+.updateButton{
+    border: 1px solid #bebcbc;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.todo-content-right-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+.todo-content-right-side .todo-update{
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #bebcbc;
+}
+.todo-changupdate{
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #bebcbc;
+}
+.updateButton{
+    outline: none;
+    background-color: white;
+    border: 1px solid #d3d8dd ;
+}
+.updateButton:hover{
+    background-color: #d0efff;
+}
+.todo-content-right-side .todo-update:hover{
+    background-color: #d0efff;
+    border: 1px solid #bebcbc;
+}
+.todo-content-right-side .todo-update-icon{
+    font-size: 25px;
+}
+.todo-content-right-side .todo-delet{
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #bebcbc;
+    background-color: white;
+}
+.todo-content-right-side .todo-delet:hover{
+    background-color: #d0efff;
+    border: 1px solid #bebcbc;
+}
+.todo-content-right-side .todo-delet-icon{
+    font-size: 25px;
+}
+@media (max-width: 430px){
+    .todo-wrapper{
+        margin-top: 30px;
+        gap: 20px;
+        padding: 0 10px;
+        font-size: 25px;
+    }
+    .todo-content{
+        display: flex;
+        align-items: center;
+        border: 2px solid #bebcbc;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 5px 0 0;
+    }
+    .updateInput{
+        width: 140px;
+        height: 30px;
+        font-size: 20px;
+        outline: none;
+    }
+    .todo-content-right-side .todo-update :hover{
+        background-color: white;
+    }
+    .todo-content-right-side .todo-delet:hover{
+        background-color: #ffffff;
+        border: 1px solid #bebcbc;
+    }
+    .todo-changupdate{
+        display: none;
+    }
+    .todo-text{
+        max-width: 200px;
+        height: max-content;
+    }
+    .todo-content-left-side{
+        padding: 20px ;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .todo-content-left-side form{
+        display: flex;
+        gap: 5px;
+    }
+    .updateButton{
+        width: 72px;
+        height: 30px;
+        font-size: 20px;
+        outline: none;
+        background-color: white;
+        border: 1px solid #d3d8dd ;
+    }
+    .updateButton:hover{
+        background-color: #ffffff;
+    }
+    .todo-content-right-side{
+        padding: 5px ;
+        gap: 10px;
+    }
+    .todo-content-right-side .todo-delet-icon, .todo-update-icon{
+        color: black;
+
+    }
+
+}
+@media (max-width:400px ){
+    .todo-wrapper{
+        padding: 0 5px;
+    }
+    .updateInput{
+        width: 94px;
+        height: 30px;
+        font-size: 20px;
+        outline: none;
+    }
+    .todo-content-left-side .todo-text{
+        max-width: 160px;
+        height: auto;
+    }
+    .todo-content-left-side{
+        padding: 5px ;
+    }
+    .todo-content-right-side{
+        gap: 5px;
+    }
+}
+@media (max-width:360px ){
+    .updateInput{
+        width: 94px;
+        height: 30px;
+        font-size: 20px;
+        outline: none;
+    }
+    .todo-content-left-side .todo-text{
+        max-width: 100px;
+        max-height: 60px;
+        font-size: 21px;
+    }
+    .todo-content-left-side{
+        padding: 5px ;
+    }
+    .todo-content-left-side input[type="checkbox"]{
+        padding: 15px ;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .todo-content-right-side .todo-update-icon{
+        font-size: 18px;
+    }
+    .todo-content-right-side .todo-delet-icon{
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:300px ){
+    .todo-content-left-side .todo-text{
+        max-width: 100px;
+        max-height: 60px;
+        font-size: 17px;
+    }
+}

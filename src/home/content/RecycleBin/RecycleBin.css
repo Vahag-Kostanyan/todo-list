@@ -1,0 +1,109 @@
+.bin-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bin-wrapper-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+}
+.bin-wrapper-img img{
+    width: 100px;
+    cursor: pointer;
+}
+.bin-wrapper-done{
+    overflow-y: scroll;
+    width: 60%;
+    height: 650px;
+    background-color: #d0efff;
+    position: absolute;
+    border-left: 1px solid #d3d8dd;
+    border-right: 1px solid #d3d8dd ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bin-wrapper-done-navbar{
+    border-top: 1px solid #d3d8dd;
+    border-bottom: 1px solid #d3d8dd;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.bin-wrapper-done-navbar-clear{
+    padding: 3px 4px;
+    border: 1px solid #d3d8dd;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px 1px ;
+    color: #d3d8dd;
+}
+.bin-wrapper-done-navbar-clear p {
+    color: black;
+}
+.bin-wrapper-done-navbar-clear:hover{
+    background-color: #d0efff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.bin-wrapper-done-navbar-close{
+    display: flex;
+    font-size: 23px;
+    border: 1px solid #d3d8dd;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px 1px ;
+    color: #d3d8dd;
+}
+.bin-wrapper-done-navbar-close:hover{
+    background-color: #d0efff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.bin-wrapper-done-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+@media (max-width: 450px){
+    .bin-wrapper-img{
+        display: none;
+    }
+    .bin-wrapper-done{
+        width: 100%;
+        height: 100%;
+        margin-top: -40px;
+    }
+    .bin-wrapper-done-navbar{
+        padding: 10px;
+    }
+    .bin-wrapper-done-navbar-clear p{
+        font-size: 25px;
+    }
+    .bin-wrapper-done-navbar-clear:hover{
+        padding: 3px 4px;
+        border: 1px solid #d3d8dd;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 4px 1px ;
+        color: #d3d8dd;
+    }
+    .bin-wrapper-done-navbar-close{
+        font-size: 34px;
+    }
+}
+@media (max-width: 400px){
+    .bin-wrapper-img{
+        display: none;
+    }
+}
+@media (max-width: 350px){
+    .bin-wrapper-done-navbar-clear p{
+        font-size: 18px;
+    }
+}

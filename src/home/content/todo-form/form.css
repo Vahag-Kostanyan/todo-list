@@ -1,0 +1,70 @@
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.form-wrapper form{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 10px;
+    border: 2px solid #bebcbc;
+}
+.form-add-todo{
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0.11vw solid #bebcbc;
+    outline: none;
+    color: #434242;
+}
+.form-search-todo{
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0.11vw solid #bebcbc;
+    outline: none;
+}
+.form-button{
+    width: 130px;
+    padding: 3px;
+    border-radius: 7px;
+    border: 0.11vw solid #bebcbc;
+}
+.form-button:hover{
+    cursor: pointer;
+}
+@media(max-width:650px){
+    .form-wrapper form{
+        width: 400px;
+
+    }
+}
+@media(max-width:430px){
+    .form-wrapper form{
+        padding: 20px 10px;
+        width: 360px;
+        gap: 10px;
+        border: none;
+    }
+    .form-add-todo{
+        padding: 9px 13px;
+        border-radius: 13px;
+        font-size: 15px;
+    }
+    .form-search-todo{
+        padding: 9px 13px;
+        border-radius: 13px;
+        font-size: 15px;
+    }
+    .form-button{
+        padding: 6px 13px;
+        border-radius: 11px;
+        font-size: 17px;
+    }
+}
+@media(max-width:340px){
+    .form-wrapper form{
+        width: 280px;
+    }
+}
